@@ -1,11 +1,18 @@
 window.onload = () => {
 	const submit = document.querySelector('#submit');
+	const resetBtn = document.querySelector('#reset');
 	const resultDiv = document.querySelector('#result');
 	const carbohydrateField = document.querySelector('#carbohydrate');
 	const insulinDiv = document.querySelector('#insulin-div');
 	const insulinField = document.querySelector('#insulin');
 	const errorDiv = document.querySelector('#errorDiv');
 	const XE = 12;
+
+	resetBtn &&
+		resetBtn.addEventListener('click', () => {
+			localStorage.removeItem('data');
+			location.reload();
+		});
 
 	// Если в localStorage есть коэффицент инсулина то выведим его
 	if (localStorage.getItem('data')) {
