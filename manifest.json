@@ -1,10 +1,10 @@
 {
 	"manifest_version": 2,
-	"name": "Link Generator",
-	"version": "0.0.2",
+	"name": "Insulin Сalculator",
+	"version": "0.0.3",
 	"default_locale": "ru",
 	"icons": { "16": "icon.png", "48": "icon.png", "128": "icon.png" },
-	"description": "Формируем ссылку и отправляем на телефон",
+	"description": "Просчет укола инсулина в XE | Insulin injection miscalculation",
 	"author": "Magomedov Mario",
 	"homepage_url": "https://github.com/web-2017/Insulin-plugin-extensions",
 	"browser_action": {
