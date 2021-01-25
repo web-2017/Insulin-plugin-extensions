@@ -1,0 +1,15 @@
+.wrap {
+	background: #ccc;
+	min-height: 300px;
+	width: 400px;
+	text-align: center;
+	padding: 20px;
+	box-sizing: border-box;
+	overflow: hidden;
+	box-shadow: 2px 3px 17px #000;
+	border-radius: 4px;
+}
+
+.hidden {
+	display: none;
+}

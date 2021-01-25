@@ -1,0 +1,28 @@
+{
+	"manifest_version": 2,
+	"name": "Link Generator",
+	"version": "0.0.1",
+	"default_locale": "ru",
+	"icons": { "16": "icon.png", "48": "icon.png", "128": "icon.png" },
+	"description": "Формируем ссылку и отправляем на телефон",
+	"author": "Magomedov Mario",
+	"browser_action": {
+		"default_title": "Send Link to Phone",
+		"default_icon": "icon.png",
+		"default_popup": "index.html"
+	},
+	"permissions": [
+		"webNavigation",
+		"activeTab",
+		"storage",
+		"tabs",
+		"<all_urls>"
+	],
+	"content_scripts": [
+		{
+			"matches": ["<all_urls>"],
+			"js": ["script.js"],
+			"css": ["style.css"]
+		}
+	]
+}
