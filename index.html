@@ -13,7 +13,7 @@
 		<title>Document</title>
 	</head>
 	<body>
-		<div class="wrap">
+		<div class="insulin-container">
 			<h3>Калькулятор инсулина</h3>
 			<form>
 				<div class="mb-3">
@@ -26,9 +26,7 @@
 						autocomplete="off"
 						aria-describedby="emailHelp"
 					/>
-					<div id="emailHelp" class="form-text">
-						Введите общее кол-во углеводов в цифрах
-					</div>
+					<div id="emailHelp" class="form-text">Введите общее кол-во углеводов в цифрах</div>
 				</div>
 				<div class="mb-3" id="insulin-div">
 					<label
@@ -40,16 +38,8 @@
 					>
 						Коэффициент чувствительности к инсулину
 					</label>
-					<input
-						type="number"
-						class="form-control"
-						autocomplete="off"
-						id="insulin"
-						aria-describedby="emailHelp"
-					/>
-					<div id="emailHelp" class="form-text">
-						Введите общее кол-во углеводов
-					</div>
+					<input type="number" class="form-control" autocomplete="off" id="insulin" aria-describedby="emailHelp" />
+					<div id="emailHelp" class="form-text">Введите общее кол-во углеводов</div>
 				</div>
 				<div class="mb-3">
 					<span
@@ -62,19 +52,9 @@
 					</span>
 					<span class="display-5" id="result"><b>0</b></span>
 				</div>
-				<button
-					type="submit"
-					id="submit"
-					class="btn btn-outline-success btn-sm"
-				>
-					Посчитать
-				</button>
-				<button type="button" id="reset" class="btn btn-outline-danger btn-sm">
-					Сбросить все данные
-				</button>
-				<p class="mb-3 m-4 bg-danger text-white text-wrap p-3" id="errorDiv">
-					Пожалуйста введите углеводы
-				</p>
+				<button type="submit" id="submit" class="btn btn-outline-success btn-sm">Посчитать</button>
+				<button type="button" id="reset" class="btn btn-outline-danger btn-sm">Сбросить все данные</button>
+				<p class="mb-3 m-4 bg-danger text-white text-wrap p-3" id="errorDiv">Пожалуйста введите углеводы</p>
 			</form>
 		</div>
 		<script src="./script.js"></script>
